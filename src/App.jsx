@@ -14,19 +14,22 @@ import {
   SpecialMenu,
 } from "./containers";
 
+import { Navbar } from "./components";
+
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Navbar />
+      <Header />
       <AboutUs />
       <Chef />
       <FindUs />
       <Footer />
       <Gallery />
-      <Header />
       <Intro />
       <Laurels />
       <SpecialMenu />
+      <Footer />
     </>
   );
 }

@@ -20,7 +20,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   min-height: 100vh;
 }
 
@@ -39,17 +38,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
 }
 
 .app__wrapper_img-reverse {
   justify-content: flex-start;
   margin-right: 2rem;
-}
-
-.app__wrapper_img img {
-  width: 80%;
 }
 
 .custom__button {
