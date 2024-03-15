@@ -35,3 +35,15 @@
     display: flex;
   }
 }
+@media screen and (max-width: 500px) {
+  .app__header-h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .app__header-h1 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+}
