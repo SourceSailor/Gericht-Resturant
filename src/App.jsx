@@ -22,13 +22,13 @@ function App() {
       <Navbar />
       <Header />
       <AboutUs />
+      <SpecialMenu />
       <Chef />
       <FindUs />
       <Footer />
       <Gallery />
       <Intro />
       <Laurels />
-      <SpecialMenu />
       <Footer />
     </>
   );
