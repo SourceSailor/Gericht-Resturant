@@ -43,3 +43,36 @@
   margin-top: 1rem;
   color: var(--color-grey);
 }
+
+@media screen and (max-width: 1300px) {
+  .menuItem__container {
+    margin: 2rem 0 1rem 0;
+  }
+  .menuItem__separator {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menuItem__title {
+    font-size: 20px;
+    margin-right: 1rem;
+  }
+  .menuItem__price {
+    font-size: 20px;
+  }
+
+  .menuItem__description {
+    font-size: 14px;
+    margin-top: 0.2rem;
+  }
+  .menuItem__separator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .menuItem__title-Price {
+    justify-content: center;
+  }
+}
