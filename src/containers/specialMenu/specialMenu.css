@@ -16,8 +16,6 @@
 .app__specialMenu-menu {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 100%;
 }
 .app__specialMenu-menu_wine {
   flex-direction: column;
