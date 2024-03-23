@@ -24,10 +24,10 @@ function App() {
       <AboutUs />
       <SpecialMenu />
       <Chef />
+      <Intro />
       <FindUs />
       <Footer />
       <Gallery />
-      <Intro />
       <Laurels />
       <Footer />
     </>
