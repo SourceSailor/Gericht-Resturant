@@ -25,10 +25,9 @@ function App() {
       <SpecialMenu />
       <Chef />
       <Intro />
-      <FindUs />
-      <Footer />
-      <Gallery />
       <Laurels />
+      <Gallery />
+      <FindUs />
       <Footer />
     </>
   );

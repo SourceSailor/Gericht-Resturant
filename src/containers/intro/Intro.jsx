@@ -1,12 +1,11 @@
-import React from "react";
 import "./intro.css";
 import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 import { meal } from "../../constants";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const Intro = () => {
   const [playVideo, setPlayVideo] = useState(false);
-  const vidRef = React.useRef();
+  const vidRef = useRef();
 
   const handleVideo = () => {
     setPlayVideo((prevVideo) => !prevVideo);

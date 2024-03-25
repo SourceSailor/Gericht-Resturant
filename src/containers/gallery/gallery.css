@@ -1,0 +1,42 @@
+.app__gallery {
+  display: flex;
+  flex-direction: row;
+  background: var(--color-black);
+  padding: 4rem 0 4rem 6rem;
+}
+.app__gallery-content {
+  width: 30%;
+  margin-right: 2rem;
+}
+.app__gallery-content button {
+  margin-top: 2rem;
+}
+.app__gallery-images {
+  width: 70%;
+}
+.app__gallery-images_container {
+  display: flex;
+  overflow: hidden;
+}
+.app__gallery-images_container img {
+  width: 301px;
+  height: 447px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.app__gallery-images_container img:hover {
+  transition: 0.3s ease;
+  opacity: 0.6;
+}
+
+.app__gallery-images_arrows {
+  position: absolute;
+}
+
+.gallery__arrow-icon:first-child {
+  color: white;
+}
+.gallery__arrow-icon:last-child {
+  color: white;
+}
