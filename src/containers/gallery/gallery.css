@@ -18,25 +18,104 @@
   display: flex;
   overflow: hidden;
 }
-.app__gallery-images_container img {
-  width: 301px;
+.app__gallery-images_card {
+  position: relative;
+  min-width: 301px;
   height: 447px;
-  gap: 0px;
-  opacity: 0px;
+  margin-right: 2rem;
+}
+.app__gallery-images_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.app__gallery-images_container img:hover {
+.app__gallery-images_card img:hover {
   transition: 0.3s ease;
   opacity: 0.6;
 }
+.gallery__image-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.app__gallery-images_card:hover .gallery__image-icon {
+  opacity: 1;
+}
 
 .app__gallery-images_arrows {
+  display: flex;
   position: absolute;
+  align-items: center;
 }
 
-.gallery__arrow-icon:first-child {
+.gallery__arrow-icon {
+  color: var(--color-golden);
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: var(--color-black);
+  border-radius: 5px;
+}
+.gallery__arrow-icon:hover {
   color: white;
 }
-.gallery__arrow-icon:last-child {
-  color: white;
+@media screen and (min-width: 2000px) {
+  .app__gallery-content {
+    width: 40%;
+    margin-right: 4rem;
+  }
+  .app__gallery-images {
+    height: 100%;
+    width: 60%;
+  }
+  .app__gallery-images_container {
+    width: 100%;
+    height: 100%;
+  }
+  .app__gallery-images_card {
+    position: relative;
+    width: 100%;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .app__gallery-content {
+    width: 40%;
+    margin-right: 2rem;
+  }
+  .app__gallery-images {
+    width: 60%;
+  }
+  .app__gallery-images_card {
+    margin-right: 1.4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .app__gallery {
+    flex-direction: column;
+    padding: 4rem 4rem 4rem 4rem;
+  }
+  .app__gallery-content {
+    width: 100%;
+    margin-right: 0;
+  }
+  .app__gallery-content h1 {
+    font-size: 50px;
+  }
+  .app__gallery-images {
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .app__gallery {
+    flex-direction: column;
+    padding: 2rem 2rem 4rem 2rem;
+  }
+  .app__gallery-content h1 {
+    font-size: 40px;
+  }
 }
