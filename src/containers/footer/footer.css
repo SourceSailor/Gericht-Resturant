@@ -1,0 +1,111 @@
+.app__footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-black);
+  padding-top: 0;
+}
+
+.app__footer-content__section {
+  z-index: 1;
+  color: white;
+  width: 80%;
+  justify-content: space-between;
+  align-content: space-between;
+  display: flex;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.app__footer-content {
+  width: 30%;
+}
+
+.app__footer-content-headtext {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  letter-spacing: 0.04em;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.app__footer-content p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.app__footer-content img:first-child {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.app__footer-content__social-icons {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.app__footer-content__copyright {
+  z-index: 1;
+  color: white;
+  margin: 6rem 0 1rem 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__footer-content img:first-child {
+    width: 289px;
+    height: 83px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .app__footer-content__section {
+    width: 100%;
+  }
+  .app__footer-content-headtext {
+    font-size: 25px;
+    line-height: 31.6px;
+  }
+  .app__footer-content p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .app__footer-content img:first-child {
+    width: 80%;
+  }
+  .app__footer-content__social-icons {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__footer-content__section {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0;
+  }
+  .app__footer-content {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .app__footer-content-headtext {
+    font-size: 30px;
+    line-height: 31.6px;
+  }
+  .app__footer-content img:first-child {
+    width: 60%;
+  }
+}
